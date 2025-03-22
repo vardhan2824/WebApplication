@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Express Server - Welcome</title>
+  <title>Profile</title>
   <link rel="stylesheet" href="styles.css" />
   <style>
     body {
@@ -17,11 +17,7 @@
       color: #00796b;
       font-size: 2.5rem;
     }
-    p {
-      color: #004d40;
-      font-size: 1.2rem;
-    }
-    a, button {
+    button {
       display: inline-block;
       margin-top: 20px;
       padding: 12px 24px;
@@ -29,20 +25,19 @@
       color: white;
       background-color: #00796b;
       border-radius: 8px;
-      text-decoration: none;
       border: none;
       cursor: pointer;
       transition: background-color 0.3s;
     }
-    a:hover, button:hover {
+    button:hover {
       background-color: #004d40;
     }
   </style>
 </head>
 <body>
-  <h1>Welcome to Your Express Server!</h1>
-  <p>The server is live and ready to serve your requests. 🌟</p>
-  <a href="/api">Visit API Endpoint</a>
-  <button onclick="window.location.href='pages/signin_signup.html'">Go to Sign In / Sign Up</button>
+  <h1>Profile</h1>
+  <p>Name: John Doe</p>
+  <p>Email: johndoe@example.com</p>
+  <button onclick="window.location.href='dashboard.html'">Back to Dashboard</button>
 </body>
 </html>

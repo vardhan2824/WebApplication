@@ -8,38 +8,36 @@
   <style>
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #e3f2fd;
+      background-color: #e0f7fa;
       margin: 0;
       padding: 50px;
       text-align: center;
     }
     h1 {
-      color: #0d47a1;
+      color: #00796b;
       font-size: 2.5rem;
     }
-    p {
-      color: #1565c0;
-      font-size: 1.2rem;
-    }
-    a {
+    button {
       display: inline-block;
       margin-top: 20px;
       padding: 12px 24px;
       font-size: 1rem;
       color: white;
-      background-color: #0d47a1;
+      background-color: #00796b;
       border-radius: 8px;
-      text-decoration: none;
+      border: none;
+      cursor: pointer;
       transition: background-color 0.3s;
     }
-    a:hover {
-      background-color: #1565c0;
+    button:hover {
+      background-color: #004d40;
     }
   </style>
 </head>
 <body>
-  <h1>Welcome to Your Dashboard</h1>
-  <p>Here you can monitor and manage your application data.</p>
-  <a href="/">Back to Home</a>
+  <h1>Dashboard</h1>
+  <p>Welcome to your dashboard! Here you can manage your profile and settings.</p>
+  <button onclick="window.location.href='profile.html'">View Profile</button>
+  <button onclick="window.location.href='logout.html'">Logout</button>
 </body>
 </html>
