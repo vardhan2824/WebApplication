@@ -21,7 +21,7 @@
       color: #004d40;
       font-size: 1.2rem;
     }
-    a {
+    a, button {
       display: inline-block;
       margin-top: 20px;
       padding: 12px 24px;
@@ -30,9 +30,11 @@
       background-color: #00796b;
       border-radius: 8px;
       text-decoration: none;
+      border: none;
+      cursor: pointer;
       transition: background-color 0.3s;
     }
-    a:hover {
+    a:hover, button:hover {
       background-color: #004d40;
     }
   </style>
@@ -42,5 +44,6 @@
   <p>The server is live and ready to serve your requests. 🌟</p>
   <p>Feel free to navigate to the API endpoint using the button below.</p>
   <a href="/api">Visit API Endpoint</a>
+  <button onclick="window.location.href='/dashboard.html'">Go to Dashboard</button>
 </body>
 </html>
