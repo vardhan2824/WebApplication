@@ -3,46 +3,111 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Express Server - Welcome</title>
-  <link rel="stylesheet" href="styles.css" />
+  <title>Welcome to [Your Company Name]</title>
   <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #e0f7fa;
+    body, html {
       margin: 0;
-      padding: 50px;
-      text-align: center;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
     }
-    h1 {
-      color: #00796b;
-      font-size: 2.5rem;
-    }
-    p {
-      color: #004d40;
-      font-size: 1.2rem;
-    }
-    a, button {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 12px 24px;
-      font-size: 1rem;
+
+    header {
+      background-color: #002b5c;
       color: white;
-      background-color: #00796b;
-      border-radius: 8px;
-      text-decoration: none;
-      border: none;
-      cursor: pointer;
-      transition: background-color 0.3s;
+      padding: 20px;
+      text-align: center;
+      font-size: 24px;
     }
-    a:hover, button:hover {
-      background-color: #004d40;
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #004080;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 14px 20px;
+      font-size: 16px;
+    }
+
+    nav a:hover {
+      background-color: #0056b3;
+    }
+
+    .container {
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    h1 {
+      color: #002b5c;
+    }
+
+    p {
+      margin-bottom: 30px;
+      font-size: 18px;
+      color: #555;
+    }
+
+    button {
+      background-color: #002b5c;
+      color: white;
+      border: none;
+      padding: 14px 28px;
+      font-size: 16px;
+      margin: 10px;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    footer {
+      background-color: #002b5c;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      position: relative;
+      bottom: 0;
+      width: 100%;
     }
   </style>
 </head>
 <body>
-  <h1>Welcome to Your Express Server!</h1>
-  <p>The server is live and ready to serve your requests. 🌟</p>
-  <a href="/api">Visit API Endpoint</a>
-  <button onclick="window.location.href='pages/signin_signup.html'">Go to Sign In / Sign Up</button>
+  <!-- Header Section -->
+  <header>
+    Welcome to [Your Company Name]
+  </header>
+
+  <!-- Navigation Section -->
+  <nav>
+    <a href="pages/signin_signup.html">Sign In / Sign Up</a>
+    <a href="pages/profile.html">Profile</a>
+    <a href="pages/logout.html">Logout</a>
+    <a href="pages/dashboard.html">Dashboard</a>
+  </nav>
+
+  <!-- Main Content Section -->
+  <div class="container">
+    <h1>Your Success, Our Commitment</h1>
+    <p>We provide top-notch solutions to help your business grow. Join us today and experience the difference.</p>
+    <button onclick="window.location.href='pages/signin_signup.html'">Get Started</button>
+  </div>
+
+  <!-- Footer Section -->
+  <footer>
+    &copy; <span id="year"></span> [Your Company Name]. All Rights Reserved.
+  </footer>
+
+  <script>
+    // Automatically update the footer year
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
